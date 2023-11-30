@@ -1,0 +1,126 @@
+CRITICAL - 2023-10-10 06:31:24 --> Invalid file: "principal.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('principal.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('principal', [], true)
+ 3 APPPATH\Controllers\Principal.php(10): view('principal')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Principal->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Principal))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
+CRITICAL - 2023-10-10 06:42:03 --> include(navbar.php): Failed to open stream: No such file or directory
+in APPPATH\Views\bienvenidaVista.php on line 17.
+ 1 APPPATH\Views\bienvenidaVista.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\TeziuApp\\app\\Views\\bienvenidaVista.php', 17)
+ 2 APPPATH\Views\bienvenidaVista.php(17): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\TeziuApp\\app\\Views\\bienvenidaVista.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('bienvenidaVista', [], true)
+ 6 APPPATH\Controllers\Bienvenida.php(12): view('bienvenidaVista')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Bienvenida->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bienvenida))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
+CRITICAL - 2023-10-10 06:42:56 --> Invalid file: "principal.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('principal.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('principal', [], true)
+ 3 APPPATH\Controllers\Principal.php(10): view('principal')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Principal->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Principal))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
+CRITICAL - 2023-10-10 06:43:12 --> Invalid file: "principal.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('principal.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('principal', [], true)
+ 3 APPPATH\Controllers\Principal.php(10): view('principal')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Principal->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Principal))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
+CRITICAL - 2023-10-10 06:50:38 --> Invalid file: "principal.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('principal.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('principal', [], true)
+ 3 APPPATH\Controllers\Principal.php(10): view('principal')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Principal->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Principal))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
+CRITICAL - 2023-10-10 06:55:04 --> Invalid file: "principal.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('principal.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('principal', [], true)
+ 3 APPPATH\Controllers\Principal.php(10): view('principal')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Principal->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Principal))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
+CRITICAL - 2023-10-10 06:56:52 --> Invalid file: "principal.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('principal.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('principal', [], true)
+ 3 APPPATH\Controllers\Principal.php(10): view('principal')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Principal->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Principal))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
+CRITICAL - 2023-10-10 06:57:03 --> Invalid file: "principal.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('principal.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('principal', [], true)
+ 3 APPPATH\Controllers\Principal.php(10): view('principal')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Principal->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Principal))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
+CRITICAL - 2023-10-10 06:57:07 --> Invalid file: "principal.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('principal.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('principal', [], true)
+ 3 APPPATH\Controllers\Principal.php(10): view('principal')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Principal->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Principal))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
+CRITICAL - 2023-10-10 07:22:51 --> Invalid file: "principal.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('principal.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('principal', [], true)
+ 3 APPPATH\Controllers\Principal.php(10): view('principal')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Principal->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Principal))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
+CRITICAL - 2023-10-10 07:23:36 --> Invalid file: "principal.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('principal.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('principal', [], true)
+ 3 APPPATH\Controllers\Principal.php(10): view('principal')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Principal->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Principal))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
+CRITICAL - 2023-10-10 07:24:39 --> include(navegacion.php): Failed to open stream: No such file or directory
+in APPPATH\Views\principal\principal.php on line 16.
+ 1 APPPATH\Views\principal\principal.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navegacion.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\TeziuApp\\app\\Views\\principal\\principal.php', 16)
+ 2 APPPATH\Views\principal\principal.php(16): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\TeziuApp\\app\\Views\\principal\\principal.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('principal/principal', [], true)
+ 6 APPPATH\Controllers\Principal.php(10): view('principal/principal')
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Principal->index()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Principal))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
