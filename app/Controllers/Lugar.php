@@ -15,6 +15,11 @@ class Lugar extends BaseController
          // Cargar el modelo de lugar turístico
         $lugarModel = model('LugarModel');
 
+        $session = session();
+        if($session->get('logged_in')!=true){
+            return redirect('usuario/login','refresh');
+        }
+
         // Obtener todas las filas de la tabla gastronomia
         $data['lugares'] = $lugarModel->findAll();
         return
@@ -28,6 +33,7 @@ class Lugar extends BaseController
  
     public function agregar(){
 
+      
          // Configurar datos para la vista
         $data['title']="Agregar Lugar Turístico";   
         $validation =  \Config\Services::validation();
@@ -61,6 +67,9 @@ class Lugar extends BaseController
 
     public function insert()
     {
+
+      
+        
         $lugarModel = model('LugarModel');
         $data = [
             "nombre_lugar" => $_POST['nombre_lugar'],
@@ -75,6 +84,8 @@ class Lugar extends BaseController
 
     public function delete($id)
     {
+      
+
         $lugarModel = model('LugarModel');
         $lugarModel->delete($id);
         return redirect('lugar/mostrar', 'refresh');
@@ -82,6 +93,8 @@ class Lugar extends BaseController
 
     public function editar($id)
     {
+
+     
 
         $adoptadorModel = model('LugarModel');
         // Obtener datos específicos de un registro
@@ -95,6 +108,8 @@ class Lugar extends BaseController
 
     public function update()
     {
+
+
         $lugarModel = model('LugarModel');
         $data = [
             "nombre_lugar" => $_POST['nombre_lugar'],

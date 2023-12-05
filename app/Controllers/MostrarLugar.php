@@ -12,7 +12,7 @@ class MostrarLugar extends BaseController
         return
             view('home/head') .
             view('home/menu') .
-            view('lugar/mostrarLugar', $data) .
+            view('mostrarLugar', $data) .
             view('home/footer');
 
     }

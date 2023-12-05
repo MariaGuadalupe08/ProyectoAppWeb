@@ -18,12 +18,20 @@ class Filters extends BaseConfig
      * @var array<string, string>
      * @phpstan-var array<string, class-string>
      */
-    public array $aliases = [
+    /*public array $aliases = [
         'csrf'          => CSRF::class,
         'toolbar'       => DebugToolbar::class,
         'honeypot'      => Honeypot::class,
+        'checkSession' => CheckSession::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+    ];*/
+
+    public $aliases = [
+        'csrf'     => \CodeIgniter\Filters\CSRF::class,
+        'toolbar'  => \CodeIgniter\Filters\DebugToolbar::class,
+        'honeypot' => \CodeIgniter\Filters\Honeypot::class,
+        'checkSession' => CheckSession::class, // Agrega tu filtro personalizado
     ];
 
     /**

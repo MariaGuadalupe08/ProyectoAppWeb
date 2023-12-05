@@ -5,9 +5,15 @@ namespace App\Controllers;
 
 class Festividad extends BaseController
 {
-   
+
     public function mostrar()
     {
+
+        $session = session();
+        if($session->get('logged_in')!=true){
+            return redirect('usuario/login','refresh');
+        }
+
         // Cargar el modelo de Festividad
         $festividadModel = model('FestividadModel');
 
@@ -25,6 +31,8 @@ class Festividad extends BaseController
     // Método para agregar una nueva festividad
     public function agregar()
     {
+
+      
         // Configurar datos para la vista
         $data['title'] = "Agregar nueva festividad";   
         $validation = \Config\Services::validation();
@@ -61,7 +69,9 @@ class Festividad extends BaseController
     // Método para insertar datos de una nueva festividad en la base de datos
     public function insert()
     {
-        
+
+     
+
         $festividadModel = model('FestividadModel');
 
         // Datos a insertar en la base de datos
@@ -81,6 +91,8 @@ class Festividad extends BaseController
     // Método para eliminar una festividad
     public function delete($id)
     {
+
+      
         
         $festividadModel = model('FestividadModel');
 
@@ -92,6 +104,8 @@ class Festividad extends BaseController
     // Método para editar una festividad
     public function editar($id)
     {
+
+
         // Cargar el modelo de Festividad
         $festividadModel = model('FestividadModel');
 
@@ -108,6 +122,9 @@ class Festividad extends BaseController
 
     public function update()
     {
+
+     
+
         $festividadModel = model('FestividadModel');
         $data = [
             "nombre_festividad" => $_POST['nombre_festividad'],

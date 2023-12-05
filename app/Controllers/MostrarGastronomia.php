@@ -12,7 +12,7 @@ class MostrarGastronomia extends BaseController
         return
             view('home/head') .
             view('home/menu') .
-            view('gastronomia/mostrargastronomia', $data) .
+            view('mostrargastronomia', $data) .
             view('home/footer');
 
     }
@@ -24,7 +24,7 @@ class MostrarGastronomia extends BaseController
         return
             view('home/head') .
             view('home/menu') .
-            view('festividad/mostrarFestividad', $data) .
+            view('mostrarFestividad', $data) .
             view('home/footer');
 
     }

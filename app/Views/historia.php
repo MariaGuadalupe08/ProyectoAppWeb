@@ -27,7 +27,7 @@ img {
 </div>
 
     <div class="container mt-4">
-        <h1>Historia del Pueblo Mágico</h1>
+        <h1 align= "center"> Historia del Pueblo Mágico</h1><br>
         <p>
         Teziutlán es una ciudad y cabecera municipal del municipio de Teziutlán, ubicado en la región sierra nororiental del estado mexicano de Puebla.
         ​ El 26 de junio de 2023 recibió el nombramiento de Pueblo Mágico por parte de la Secretaría de Turismo 

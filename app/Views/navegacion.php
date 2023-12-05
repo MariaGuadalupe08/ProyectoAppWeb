@@ -12,16 +12,16 @@
                     <a class="nav-link" href="/historia">Historia</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="lugar/mostrarLugar">Lugares Turísticos</a>
+                    <a class="nav-link" href="/mostrarLugar">Lugares Turísticos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/hotel/mostrarFinal">Hoteles</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="gastronomia/mostrarGastronomia">Gastronomía</a>
+                    <a class="nav-link" href="/mostrarGastronomia">Gastronomía</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="festividad/mostrarFestividad">Festividades</a>
+                    <a class="nav-link" href="/mostrarFestividad">Festividades</a>
                 </li>
             </ul>
         </div>

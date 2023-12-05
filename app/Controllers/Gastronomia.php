@@ -7,6 +7,13 @@ class Gastronomia extends BaseController
     
     public function mostrar()
     {
+
+        //permite que no se pueda acceder a la función sin antes haber iniciad sesión
+        $session = session();
+        if($session->get('logged_in')!=true){
+            return redirect('usuario/login','refresh');
+        }
+
         // Cargar el modelo de Gastronomia
         $gastronomiaModel = model('GastronomiaModel');
 
@@ -23,6 +30,8 @@ class Gastronomia extends BaseController
  
     public function agregar()
     {
+
+
         // Configurar datos para la vista
         $data['title'] = "Agregar nueva Comida";   
         $validation = \Config\Services::validation();
@@ -62,6 +71,8 @@ class Gastronomia extends BaseController
 
     public function insert()
     {
+
+
         // Cargar el modelo de Gastronomia
         $gastronomiaModel = model('GastronomiaModel');
 
@@ -85,6 +96,8 @@ class Gastronomia extends BaseController
 
     public function delete($id)
     {
+
+
         // Cargar el modelo de Gastronomia
         $gastronomiaModel = model('GastronomiaModel');
 
@@ -97,6 +110,7 @@ class Gastronomia extends BaseController
 
     public function editar($id)
     {
+
         // Cargar el modelo de Gastronomia
         $gastronomiaModel = model('GastronomiaModel');
 
@@ -113,6 +127,8 @@ class Gastronomia extends BaseController
 
     public function update()
     {
+
+
         // Cargar el modelo de Gastronomia
         $gastronomiaModel = model('GastronomiaModel');
 

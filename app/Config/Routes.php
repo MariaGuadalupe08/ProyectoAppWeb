@@ -1,5 +1,6 @@
 <?php
 
+use App\Controllers\UserController;
 use CodeIgniter\Router\RouteCollection;
 
 /**
@@ -9,10 +10,11 @@ use CodeIgniter\Router\RouteCollection;
 //RUTAS PARA FRONTEND
 
 $routes->get('hotel/mostrarFinal', 'Home::mostrarFinal');
-$routes->get('lugar/mostrarLugar', 'MostrarLugar::mostrarLugar');
-$routes->get('gastronomia/mostrarGastronomia', 'MostrarGastronomia::mostrarGastronomia');
-$routes->get('festividad/mostrarFestividad', 'MostrarGastronomia::mostrarFestividad');
+$routes->get('/mostrarLugar', 'MostrarLugar::mostrarLugar');
+$routes->get('/mostrarGastronomia', 'MostrarGastronomia::mostrarGastronomia');
+$routes->get('/mostrarFestividad', 'MostrarGastronomia::mostrarFestividad');
 $routes->get('/principal', 'Principal::index');
+$routes->get('/menu', 'Principal::inicio');
 $routes->get('/historia', 'Historia::index');
 
 
@@ -56,4 +58,6 @@ $routes->post('/hotel/update' , 'Hotel::update');
 $routes->post('/festividad/update' , 'Festividad::update');
 
 
- 
+ //LOGIN
+ $routes->get('/usuario/login','UserController::index');
+$routes->post('/usuario/login','UserController::index');

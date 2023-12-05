@@ -1,0 +1,396 @@
+ERROR - 2023-12-02 07:27:11 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'teziuappEmm', 3306, '', 0)
+#1 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\TeziuApp\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TeziuApp\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TeziuApp\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TeziuApp\app\Controllers\MostrarLugar.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(919): App\Controllers\MostrarLugar->mostrarLugar()
+#8 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MostrarLugar))
+#9 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\TeziuApp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\TeziuApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TeziuApp\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\TeziuApp\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\TeziuApp\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\TeziuApp\app\Controllers\MostrarLugar.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(919): App\Controllers\MostrarLugar->mostrarLugar()
+#7 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MostrarLugar))
+#8 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\TeziuApp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\TeziuApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-12-02 07:27:11 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lugaresturisticos`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MostrarLugar.php(11): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MostrarLugar->mostrarLugar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MostrarLugar))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
+ERROR - 2023-12-02 07:27:57 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'teziuappEmm', 3306, '', 0)
+#1 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\TeziuApp\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TeziuApp\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TeziuApp\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TeziuApp\app\Controllers\MostrarLugar.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(919): App\Controllers\MostrarLugar->mostrarLugar()
+#8 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MostrarLugar))
+#9 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\TeziuApp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\TeziuApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TeziuApp\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\TeziuApp\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\TeziuApp\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\TeziuApp\app\Controllers\MostrarLugar.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(919): App\Controllers\MostrarLugar->mostrarLugar()
+#7 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MostrarLugar))
+#8 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\TeziuApp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\TeziuApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-12-02 07:27:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lugaresturisticos`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MostrarLugar.php(11): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MostrarLugar->mostrarLugar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MostrarLugar))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
+ERROR - 2023-12-02 07:28:00 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'teziuappEmm', 3306, '', 0)
+#1 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\TeziuApp\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TeziuApp\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TeziuApp\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TeziuApp\app\Controllers\Home.php(10): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(919): App\Controllers\Home->mostrarFinal()
+#8 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\TeziuApp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\TeziuApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TeziuApp\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\TeziuApp\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\TeziuApp\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\TeziuApp\app\Controllers\Home.php(10): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(919): App\Controllers\Home->mostrarFinal()
+#7 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\TeziuApp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\TeziuApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-12-02 07:28:00 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hoteles`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(10): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->mostrarFinal()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
+ERROR - 2023-12-02 07:28:02 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'teziuappEmm', 3306, '', 0)
+#1 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\TeziuApp\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TeziuApp\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TeziuApp\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TeziuApp\app\Controllers\MostrarGastronomia.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(919): App\Controllers\MostrarGastronomia->mostrarGastronomia()
+#8 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MostrarGastronomia))
+#9 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\TeziuApp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\TeziuApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TeziuApp\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\TeziuApp\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\TeziuApp\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\TeziuApp\app\Controllers\MostrarGastronomia.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(919): App\Controllers\MostrarGastronomia->mostrarGastronomia()
+#7 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MostrarGastronomia))
+#8 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\TeziuApp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\TeziuApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-12-02 07:28:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `gastronomia`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MostrarGastronomia.php(11): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MostrarGastronomia->mostrarGastronomia()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MostrarGastronomia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
+ERROR - 2023-12-02 07:28:04 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'teziuappEmm', 3306, '', 0)
+#1 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\TeziuApp\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TeziuApp\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TeziuApp\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TeziuApp\app\Controllers\MostrarGastronomia.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(919): App\Controllers\MostrarGastronomia->mostrarFestividad()
+#8 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MostrarGastronomia))
+#9 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\TeziuApp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\TeziuApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TeziuApp\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\TeziuApp\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\TeziuApp\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\TeziuApp\app\Controllers\MostrarGastronomia.php(23): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(919): App\Controllers\MostrarGastronomia->mostrarFestividad()
+#7 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MostrarGastronomia))
+#8 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\TeziuApp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\TeziuApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-12-02 07:28:04 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `festividades`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MostrarGastronomia.php(23): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MostrarGastronomia->mostrarFestividad()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MostrarGastronomia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
+ERROR - 2023-12-02 07:28:14 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'teziuappEmm', 3306, '', 0)
+#1 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\TeziuApp\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TeziuApp\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TeziuApp\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TeziuApp\app\Controllers\Home.php(10): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(919): App\Controllers\Home->mostrarFinal()
+#8 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\TeziuApp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\TeziuApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TeziuApp\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\TeziuApp\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\TeziuApp\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\TeziuApp\app\Controllers\Home.php(10): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(919): App\Controllers\Home->mostrarFinal()
+#7 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\TeziuApp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\TeziuApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-12-02 07:28:14 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hoteles`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(10): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->mostrarFinal()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
+ERROR - 2023-12-02 07:30:53 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'teziuappEmm', 3306, '', 0)
+#1 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\TeziuApp\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TeziuApp\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TeziuApp\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TeziuApp\app\Controllers\Home.php(10): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(919): App\Controllers\Home->mostrarFinal()
+#8 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\TeziuApp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\TeziuApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TeziuApp\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\TeziuApp\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\TeziuApp\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\TeziuApp\app\Controllers\Home.php(10): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(919): App\Controllers\Home->mostrarFinal()
+#7 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\TeziuApp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\TeziuApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-12-02 07:30:53 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hoteles`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(10): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->mostrarFinal()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
+ERROR - 2023-12-02 07:30:56 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'teziuappEmm', 3306, '', 0)
+#1 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\TeziuApp\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TeziuApp\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TeziuApp\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TeziuApp\app\Controllers\MostrarLugar.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(919): App\Controllers\MostrarLugar->mostrarLugar()
+#8 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MostrarLugar))
+#9 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\TeziuApp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\TeziuApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TeziuApp\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\TeziuApp\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\TeziuApp\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\TeziuApp\app\Controllers\MostrarLugar.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(919): App\Controllers\MostrarLugar->mostrarLugar()
+#7 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MostrarLugar))
+#8 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\TeziuApp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\TeziuApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-12-02 07:30:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lugaresturisticos`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MostrarLugar.php(11): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MostrarLugar->mostrarLugar()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MostrarLugar))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')
+ERROR - 2023-12-02 07:43:36 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'teziuappEmm', 3306, '', 0)
+#1 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\TeziuApp\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\TeziuApp\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\TeziuApp\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\TeziuApp\app\Controllers\MostrarGastronomia.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(919): App\Controllers\MostrarGastronomia->mostrarGastronomia()
+#8 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MostrarGastronomia))
+#9 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\TeziuApp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\TeziuApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\xampp\htdocs\TeziuApp\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\TeziuApp\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\TeziuApp\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\TeziuApp\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\TeziuApp\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\TeziuApp\app\Controllers\MostrarGastronomia.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(919): App\Controllers\MostrarGastronomia->mostrarGastronomia()
+#7 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MostrarGastronomia))
+#8 C:\xampp\htdocs\TeziuApp\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\TeziuApp\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\TeziuApp\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-12-02 07:43:36 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `gastronomia`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MostrarGastronomia.php(11): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MostrarGastronomia->mostrarGastronomia()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MostrarGastronomia))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\TeziuApp\\public\\index.php')

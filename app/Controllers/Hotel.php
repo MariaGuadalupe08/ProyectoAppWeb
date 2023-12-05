@@ -12,6 +12,11 @@ class Hotel extends BaseController
     public function mostrar()
     {
 
+        $session = session();
+        if($session->get('logged_in')!=true){
+            return redirect('usuario/login','refresh');
+        }
+
          // Cargar el modelo de hotel
         $hotelModel = model('HotelModel');
         $data['hoteles'] = $hotelModel->findAll();
@@ -26,6 +31,7 @@ class Hotel extends BaseController
  
     public function agregar(){
         $data['title']="Agregar nuevo hotel";   
+
 
          // Verificar si el método de solicitud es GET
         $validation =  \Config\Services::validation();
@@ -60,6 +66,8 @@ class Hotel extends BaseController
 
     public function insert()
     {
+
+
         $hotelModel = model('HotelModel');
         $data = [
 
@@ -78,6 +86,7 @@ class Hotel extends BaseController
     // Eliminar un registro de la base de datos
     public function delete($id)
     {
+
         $hotelModel = model('HotelModel');
         $hotelModel->delete($id);
         return redirect('hotel/mostrar', 'refresh');
@@ -97,6 +106,8 @@ class Hotel extends BaseController
 
     public function update()
     {
+
+
         $hotelModel = model('HotelModel');
         $data = [
             "nombre_hotel" => $_POST['nombre_hotel'],
